@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg">
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="@dimen/size_25"
+        android:layout_height="@dimen/size_25"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_15"
+        android:src="@mipmap/setting" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_127"
+        android:background="@drawable/login_point_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_40"
+            android:background="@drawable/corner_white_bg">
+
+
+            <ImageView
+                android:id="@+id/iv_account"
+                android:layout_width="@dimen/size_17"
+                android:layout_height="@dimen/size_18"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/size_15"
+                android:src="@mipmap/accunt" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="@dimen/size_1"
+                android:layout_height="@dimen/size_13"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/size_7"
+                android:layout_toRightOf="@id/iv_account"
+                android:background="@color/black" />
+
+            <EditText
+                android:id="@+id/et_account"
+                style="@style/textStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/size_6"
+                android:layout_toLeftOf="@id/iv_clean_account"
+                android:layout_toRightOf="@id/view1"
+                android:background="@null"
+                android:hint="@string/inpuut_account"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_16" />
+
+            <ImageView
+                android:id="@+id/iv_clean_account"
+                android:layout_width="@dimen/size_20"
+                android:layout_height="@dimen/size_20"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size_6"
+                android:src="@mipmap/delete" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_20"
+            android:background="@drawable/corner_white_bg">
+
+
+            <ImageView
+                android:id="@+id/iv_password"
+                android:layout_width="@dimen/size_17"
+                android:layout_height="@dimen/size_18"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/size_15"
+                android:src="@mipmap/password" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="@dimen/size_1"
+                android:layout_height="@dimen/size_13"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/size_7"
+                android:layout_toRightOf="@id/iv_password"
+                android:background="@color/black" />
+
+            <EditText
+                android:id="@+id/et_psw"
+                style="@style/textStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/size_6"
+                android:layout_marginRight="@dimen/size_3"
+                android:layout_toLeftOf="@id/iv_hide_show_psw"
+                android:layout_toRightOf="@id/view2"
+                android:background="@null"
+                android:hint="@string/input_password"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_16" />
+
+            <ImageView
+                android:id="@+id/iv_clean_psw"
+                android:layout_width="@dimen/size_20"
+                android:layout_height="@dimen/size_20"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size_6"
+                android:src="@mipmap/delete" />
+
+            <ImageView
+                android:id="@+id/iv_hide_show_psw"
+                android:layout_width="@dimen/size_25"
+                android:layout_height="@dimen/size_25"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size_3"
+                android:layout_toLeftOf="@id/iv_clean_psw"
+                android:src="@drawable/hide_show_pwd" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/size_25"
+            android:layout_marginTop="@dimen/size_15">
+
+            <ImageView
+                android:id="@+id/iv_rem_pass"
+                android:layout_width="@dimen/size_20"
+                android:layout_height="@dimen/size_20"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/remember_pwd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/size_6"
+                android:text="@string/rem_password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="@dimen/size_30"
+            android:layout_marginLeft="@dimen/size_15"
+            android:layout_marginRight="@dimen/size_15"
+            android:layout_marginTop="@dimen/size_30"
+            android:alpha="0.75"
+            android:background="@drawable/login_button_bg"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/size_6"
+        android:text="@string/techinal_support"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_12sp"
+        android:visibility="visible" />
+
+    <bar.barcode.loading.LoadingView
+        android:id="@+id/loadView"
+
+        android:layout_width="@dimen/size_200"
+        android:layout_height="@dimen/size_180"
+        android:layout_centerInParent="true"
+        android:background="@color/tran_black"
+        android:paddingBottom="@dimen/size_6"
+        android:paddingTop="@dimen/size_17"
+        android:visibility="gone" />
+</RelativeLayout>

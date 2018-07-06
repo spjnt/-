@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dots="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <bar.barcode.loading.ShapeLoadingView
+        android:id="@+id/shapeLoadingView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp" />
+
+    <ImageView
+        android:id="@+id/indication"
+        android:layout_width="23dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="66dp"
+        android:src="@drawable/shadow" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_6">
+
+        <TextView
+            android:id="@+id/promptTV"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:visibility="gone"
+            tool:visibility="visible" />
+
+        <bar.barcode.loading.LoadingTextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:textColor="#FFF"
+            android:textSize="@dimen/text_size_30sp"
+            android:visibility="gone"
+            dots:autoplay="false"
+            dots:period="1000"
+            tool:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

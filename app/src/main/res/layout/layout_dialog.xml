@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <!--  android:paddingBottom="36dp"
+        android:paddingLeft="72dp"
+        android:paddingRight="72dp"
+        android:paddingTop="36dp"-->
+    <bar.barcode.loading.LoadingView
+        android:id="@+id/load_view"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/more_black"
+        android:padding="10dp" />
+
+</FrameLayout>

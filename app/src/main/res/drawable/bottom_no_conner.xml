@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/white"/>
+
+
+    <!--<size
+        android:width="300dp"
+        android:height="@dimen/size_40" />-->
+    <stroke
+        android:width="0.5px"
+        android:color="@color/black"
+        />
+
+</shape>
+    <!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <!--<item-->
+    <!--android:top="-2dp"-->
+    <!--android:right="-2dp"-->
+    <!--android:left="-2dp">-->
+    <!--<shape>-->
+
+    <!--<solid android:color="@color/white" />-->
+
+    <!--<corners-->
+    <!--android:bottomLeftRadius="20dp"-->
+    <!--android:bottomRightRadius="20dp"-->
+    <!--android:topLeftRadius="20dp"-->
+    <!--android:topRightRadius="20dp" />-->
+    <!--<stroke-->
+    <!--android:color="@color/color_gray_c5c7ce"-->
+    <!--android:width="0.5px"-->
+    <!--/>-->
+    <!--</shape>-->
+    <!--</item>-->
+
+    <!--</layer-list>-->

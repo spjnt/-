@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size_4"
+    android:background="@drawable/bottom_no_conner">
+
+    <TextView
+        android:id="@+id/tv_cow_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/size_4"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/iv_delete_cow_id"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/size_7"
+        android:src="@mipmap/delete" />
+</RelativeLayout>

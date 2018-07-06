@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:background="@color/login_button">
+
+        <ImageView
+            android:id="@+id/iv_back_his"
+            android:layout_width="@dimen/size_30"
+            android:layout_height="@dimen/size_30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_8"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/size_8"
+            android:text="历史记录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <TextView
+            android:id="@+id/iv_clean_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_8"
+            android:text="清除记录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:id="@+id/rl_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_bar"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wheel_h_index" />
+
+        <com.vondear.rxui.view.wheelhorizontal.WheelHorizontalView
+            android:id="@+id/whell_year_day"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40" />
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_time"
+        android:layout_margin="@dimen/size_4"
+        android:layout_marginTop="@dimen/size_4"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

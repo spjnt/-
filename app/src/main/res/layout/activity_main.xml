@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_bottom"
+        android:layout_below="@id/app_bar"
+        android:layout_marginLeft="@dimen/size_9"
+        android:layout_marginRight="@dimen/size_9"
+        android:layout_marginTop="@dimen/size_4">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <bar.barcode.view.DragFloatingActionButton
+        android:id="@+id/drag_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/size_55"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+        android:src="@mipmap/scan"
+        app:borderWidth="0dp"
+        app:fabSize="mini" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0.5px"
+            android:background="@color/tran_black" />
+
+        <TextView
+
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_8"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <ImageView
+            android:id="@+id/iv_clean"
+            android:layout_width="@dimen/size_18"
+            android:layout_height="@dimen/size_18"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size_8"
+            android:layout_marginRight="@dimen/size_14"
+            android:layout_toRightOf="@id/tv_total"
+            android:src="@mipmap/clean" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/size_4"
+            android:layout_marginRight="@dimen/size_8"
+            android:layout_marginTop="@dimen/size_4"
+            android:alpha="0.8"
+            android:background="@drawable/corner_blue_bg"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18sp" />
+    </RelativeLayout>
+</RelativeLayout>

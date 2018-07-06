@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>版本更新</item>
+        <item>历史记录</item>
+        <item />
+        <item>退出</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+
+
+        <item>@drawable/version</item>
+        <item>@drawable/history</item>
+        <item>0</item>
+        <item>@drawable/login_out</item>
+
+
+    </array>
+
+</resources>

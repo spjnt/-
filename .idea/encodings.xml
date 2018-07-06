@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/Region.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/bar/barcode/jni/bar_def.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/bar/barcode/jni/codec_bar.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/bar/barcode/jni/rcg_cont.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/bar/barcode/jni/rcg_prc.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/bar/barcode/jni/rsa_codec.c" charset="GBK" />
+  </component>
+</project>
